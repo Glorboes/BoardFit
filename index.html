@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#234e40"><title>Boardfit · Cutting planner</title><style>@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+:root{--bg:#f6f6f0;--ink:#263d34;--muted:#788078;--line:#e3e6dc;--green:#244f40}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:14px 'DM Sans',sans-serif}button,input{font:inherit}button{cursor:pointer}header{height:88px;border-bottom:1px solid var(--line);padding:0 4.4%;display:flex;align-items:center;justify-content:space-between;background:#fcfcf8}.brand{display:flex;align-items:center;gap:10px;font:800 29px Manrope,sans-serif;color:var(--ink);text-decoration:none;letter-spacing:-1.5px}.brand-icon{font-size:30px;color:#fff;background:var(--green);border-radius:9px;width:38px;height:38px;text-align:center;line-height:34px}.brand-caption{font:600 9px 'DM Sans',sans-serif;letter-spacing:1.8px;border-left:1px solid #d3d9cd;padding-left:20px;margin-left:12px;color:#858b80}.outline{background:transparent;border:1px solid #ced6ca;padding:11px 17px;border-radius:7px;color:var(--ink)}main{max-width:1500px;margin:auto;padding:42px 4.4% 20px}.intro{display:flex;justify-content:space-between;align-items:end;margin-bottom:34px}.eyebrow{font-size:10px;letter-spacing:2px;font-weight:700;color:#6c7b65}h1{font:600 clamp(28px,3vw,42px) Manrope,sans-serif;letter-spacing:-1.8px;margin:10px 0}p{line-height:1.6}.intro p{color:var(--muted);margin:0;font-size:15px}.units{font-size:11px;color:#798274;padding-bottom:5px}.workspace{display:grid;grid-template-columns:380px minmax(0,1fr);gap:32px}.card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:24px;margin-bottom:20px}.section-title{display:flex;justify-content:space-between;align-items:center;margin-bottom:23px}h2{font:700 17px Manrope,sans-serif;margin:0;letter-spacing:-.4px}h2>span{font:500 11px 'DM Sans',sans-serif;color:#8b9585;margin-right:10px}.tag{font-size:9px;letter-spacing:1px;color:#87917f}.sheet-fields{display:flex;align-items:end;gap:12px}.sheet-fields label{flex:1;min-width:0;font-size:11px;font-weight:500}.sheet-fields label>span{float:right;color:#92998c;font-size:10px}.sheet-fields input{margin-top:9px;width:100%;font-size:18px;font-weight:600}.times{padding-bottom:14px;color:#899480}input[type=number]{appearance:textfield;-moz-appearance:textfield;background:#fbfcf8;border:1px solid #dce2d5;border-radius:6px;padding:12px 10px;color:var(--ink);min-width:0}input::-webkit-inner-spin-button{appearance:none}input:focus,button:focus-visible{outline:2px solid #769885;outline-offset:2px}.settings{display:flex;justify-content:space-between;align-items:center;margin-top:23px;padding-bottom:20px;border-bottom:1px solid #edf0e7}.kerf{font-size:12px}.help{display:block;font-size:10px;color:var(--muted);margin-top:4px}.small-field{display:flex;align-items:center;gap:7px;color:var(--muted);font-size:11px}.small-field input{width:55px;padding:9px;text-align:center}.toggle{display:flex;gap:10px;margin-top:18px;font-size:12px;align-items:start;cursor:pointer}.toggle input{accent-color:var(--green);width:16px;height:16px;margin:1px 0}.toggle small{display:block;color:#8a9185;font-size:10px;margin-top:5px}.cutlist .section-title{margin-bottom:8px}.muted{font-size:11px;color:var(--muted);margin:0 0 20px}.row-head,.piece-row{display:grid;grid-template-columns:28px 1fr 1fr 48px 20px;gap:8px;align-items:center}.row-head{font-size:8px;color:#85917d;letter-spacing:.6px;margin-bottom:8px}.piece-row{margin-bottom:10px}.piece-row input{width:100%;padding:11px 6px;font-size:12px;text-align:center}.piece-letter{border-radius:5px;height:28px;display:grid;place-items:center;font-size:11px;font-weight:700}.remove{background:none;border:0;color:#98a08f;font-size:20px;padding:0}.remove:hover{color:#a44231}.add{width:100%;border:1px dashed #cbd6c1;background:#fbfcf8;padding:11px;color:#5b7459;border-radius:6px;font-size:12px;margin:4px 0 0}.example-note{font-size:10px;line-height:1.5;color:#8d9585;margin:14px 0 20px}.primary{background:var(--green);color:white;border:0;border-radius:7px;padding:15px 18px;width:100%;text-align:left;font-size:13px;font-weight:600}.primary span{float:right;font-size:18px;line-height:17px}.primary:hover{background:#173d2f}.save-note{text-align:center;font-size:9px;color:#929b88;margin-top:12px}.result-heading{display:flex;justify-content:space-between;align-items:center;margin:4px 0 23px}.result-heading h2{font-size:21px;font-weight:600;margin-top:9px}.result-heading .eyebrow{font-size:9px}.status{background:#e8efdf;color:#5c774e;font-size:10px;padding:8px 11px;border-radius:20px;white-space:nowrap}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:22px}.stat{background:#fff;border:1px solid var(--line);padding:20px 20px 18px;border-radius:10px}.stat>span{font-size:9px;letter-spacing:1px;display:block;color:#7b8573}.stat strong{display:block;font:600 36px Manrope,sans-serif;letter-spacing:-1.3px;margin:9px 0}.stat small{font-size:10px;color:#8a9182}.stat.featured{background:#eaf0e1;border-color:#d6e1cc}.featured>span,.featured small{color:#5b7251}.layout-card{background:white;border:1px solid var(--line);border-radius:12px;overflow:hidden}.layout-toolbar{display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);padding:21px 24px}.layout-toolbar h3{margin:0 0 5px;font:700 14px Manrope,sans-serif}.layout-toolbar span{font-size:10px;color:#89927f}.offcut-key{white-space:nowrap}#boards{padding:24px}.board-block+.board-block{margin-top:30px;padding-top:23px;border-top:1px solid var(--line)}.board-label{display:flex;justify-content:space-between;font-size:11px;margin-bottom:10px}.board-label small{font-size:10px;color:#87917c}.board-block svg{width:100%;display:block;max-height:560px}.legend{display:flex;flex-wrap:wrap;gap:12px 20px;padding:16px 24px;background:#fcfcf8;border-top:1px solid var(--line);font-size:10px;color:#7a8572}.legend-item{display:flex;align-items:center;gap:7px}.swatch{width:10px;height:10px;border-radius:2px}.footnote{font-size:10px;color:#8b9480;line-height:1.7;margin:15px 2px}.empty{text-align:center;padding:65px 20px;color:var(--muted)}#error,#warning{padding:14px 17px;border-radius:8px;margin-bottom:16px;line-height:1.5;font-size:12px;background:#fff0e6;color:#884a2e}#error{background:#fbe9e6;color:#9d3c30}footer{display:flex;justify-content:space-between;font-size:10px;color:#9ba18e;padding-top:30px;margin-top:10px;border-top:1px solid var(--line)}.stale .layout-card,.stale .stats{opacity:.55}@media(min-width:1500px){main{padding-left:50px;padding-right:50px}}@media(max-width:1100px){.workspace{grid-template-columns:330px minmax(0,1fr);gap:22px}.card{padding:20px}.stat{padding:16px 12px}.result-heading h2{font-size:18px}.units{display:none}.status{font-size:9px}.brand-caption{display:none}}@media(max-width:800px){header{height:72px}main{padding-top:28px}.intro{margin-bottom:26px}.workspace{grid-template-columns:1fr}.intro h1{letter-spacing:-1px}.intro p{font-size:13px}.card{padding:22px}.results{min-width:0}.result-heading{margin-top:5px}.stat strong{font-size:32px}.stat>span{font-size:8px}.stat small{font-size:9px}.layout-toolbar{padding:18px}#boards{padding:16px}.result-heading h2{font-size:19px}.brand{font-size:26px}}@media print{header button,aside,.status,.units,footer{display:none}body{background:white}main{padding:10px}.intro{margin:0 0 15px}.workspace{display:block}.results{width:100%}.board-block{break-inside:avoid}.stat,.layout-card{print-color-adjust:exact;-webkit-print-color-adjust:exact}.footnote{color:#555}svg{max-height:600px!important}header{height:55px}.stale .layout-card,.stale .stats{opacity:1}}
+</style></head>
+<body><header><a class="brand" href="./"><span class="brand-icon">▥</span> boardfit<span class="brand-caption">THE WORKSHOP PLANNER</span></a><button id="print" class="outline">↗ &nbsp; Print plan</button></header>
+<main><div class="intro"><div><div class="eyebrow">MEASURE. ARRANGE. MAKE.</div><h1>Every piece in its place.</h1><p>Your cut list, laid out. See what fits before you order.</p></div><span class="units">↔ &nbsp; All dimensions in millimetres</span></div>
+<div class="workspace"><aside><form id="planner"><section class="card"><div class="section-title"><h2><span>01</span> Your sheet</h2><span class="tag">STOCK SIZE</span></div><div class="sheet-fields"><label>Length <span>mm</span><input id="sheetW" type="number" min="1" max="100000" step="any" value="2470" required></label><span class="times">×</span><label>Width <span>mm</span><input id="sheetH" type="number" min="1" max="100000" step="any" value="1800" required></label></div><div class="settings"><label class="kerf">Saw blade width <span class="help">Space lost with each cut</span></label><div class="small-field"><input id="kerf" aria-label="Saw blade width in millimetres" type="number" min="0" max="1000" step="any" value="3" required><span>mm</span></div></div><label class="toggle"><input id="rotate" type="checkbox" checked><span>Allow pieces to rotate 90°<small>Turn off to keep the grain direction.</small></span></label></section>
+<section class="card cutlist"><div class="section-title"><h2><span>02</span> Your pieces</h2><span id="pieceCount" class="tag"></span></div><p class="muted">One row for each size you need.</p><div class="row-head"><span>PIECE</span><span>LENGTH</span><span>WIDTH</span><span>QTY</span><span></span></div><div id="rows"></div><button id="add" type="button" class="add">＋ Add another size</button><div class="example-note">Start with the example pieces, or replace them with your own.</div><button class="primary" type="submit">Calculate layout <span>→</span></button><div id="saveNote" class="save-note">Saved automatically on this device</div></section></form></aside>
+<section class="results"><div class="result-heading"><div><div class="eyebrow">YOUR CUTTING PLAN</div><h2>Room for your next project.</h2></div><span id="status" class="status">● Layout ready</span></div><div id="error" role="alert" hidden></div><div id="warning" role="status" hidden></div><div class="stats"><div class="stat featured"><span>SHEETS NEEDED</span><strong id="sheetCount">—</strong><small id="stockLabel"></small></div><div class="stat"><span>PIECES PLACED</span><strong id="placed">—</strong><small id="totalLabel"></small></div><div class="stat"><span>MATERIAL USED</span><strong id="usage">—</strong><small id="wasteLabel"></small></div></div><div class="layout-card"><div class="layout-toolbar"><div><h3>Sheet layouts</h3><span>Scaled to your measurements</span></div><span class="offcut-key">▧ &nbsp; Offcut / unused</span></div><div id="boards"></div><div id="legend" class="legend"></div></div><p class="footnote">A practical straight-cut layout, with blade allowance included. Sheet count is an estimate, not a guaranteed minimum. No edge trimming allowance is included.</p></section></div><footer><span>Made for the workbench.</span><span>Less guessing. More making.</span></footer></main><script type="module">// Guillotine packing: each placement divides one free rectangle with straight cuts.
+function plan(W,H,kerf,rows,rotate=true){
+ const positive=n=>Number.isFinite(n)&&n>0&&n<=100000;
+ if(!positive(W)||!positive(H)||!Number.isFinite(kerf)||kerf<0||kerf>1000) throw Error('Enter positive sheet dimensions and a blade width from 0 to 1000 mm.');
+ if(rows.some(p=>!positive(p.w)||!positive(p.h)||!Number.isInteger(p.qty)||p.qty<1)) throw Error('Each piece needs positive dimensions and a whole-number quantity.');
+ if(rows.reduce((n,p)=>n+p.qty,0)>500) throw Error('Use up to 500 pieces per layout.');
+ const unplaced=[],items=[];
+ for(const p of rows){
+  if(!((p.w<=W&&p.h<=H)||(rotate&&p.h<=W&&p.w<=H))){unplaced.push(p);continue;}
+  for(let i=0;i<p.qty;i++)items.push({...p,copy:i+1});
+ }
+ let best;
+ const sorts=[p=>p.w*p.h,p=>Math.max(p.w,p.h),p=>p.w,p=>p.h];
+ for(const key of sorts)for(const split of [0,1]){
+  const sheets=[];
+  for(const p of [...items].sort((a,b)=>key(b)-key(a)||b.w*b.h-a.w*a.h)){
+   let choice;
+   const find=()=>{
+    for(let si=0;si<sheets.length;si++)for(let fi=0;fi<sheets[si].free.length;fi++){
+     const f=sheets[si].free[fi];
+     for(const rotated of rotate&&p.w!==p.h?[false,true]:[false]){
+      const w=rotated?p.h:p.w,h=rotated?p.w:p.h;
+      if(w>f.w||h>f.h)continue;
+      const score=f.w*f.h-w*h;
+      if(!choice||score<choice.score)choice={si,fi,w,h,rotated,score};
+     }
+    }
+   };
+   find();
+   if(!choice){sheets.push({free:[{x:0,y:0,w:W,h:H}],pieces:[]});find();}
+   const {si,fi,w,h,rotated}=choice,s=sheets[si],f=s.free.splice(fi,1)[0];
+   s.pieces.push({...p,x:f.x,y:f.y,w,h,rotated});
+   const dw=f.w-w-kerf,dh=f.h-h-kerf;
+   const vertical=split===0?dw>dh:dw<=dh;
+   const newFree=vertical?
+    [{x:f.x+w+kerf,y:f.y,w:dw,h:f.h},{x:f.x,y:f.y+h+kerf,w,h:dh}]:
+    [{x:f.x+w+kerf,y:f.y,w:dw,h},{x:f.x,y:f.y+h+kerf,w:f.w,h:dh}];
+   s.free.push(...newFree.filter(r=>r.w>0&&r.h>0));
+  }
+  const largest=Math.max(0,...sheets.flatMap(s=>s.free.map(r=>r.w*r.h)));
+  if(!best||sheets.length<best.sheets.length||(sheets.length===best.sheets.length&&largest>best.largest))best={sheets,largest};
+ }
+ return {...best,unplaced};
+}
+
+
+const $=id=>document.getElementById(id);
+const colors=['#c2d2a9','#e6cca5','#b8cfce','#d8bdd0','#c8c1df','#d9d8a9','#c0cbdc'];
+const fmt=n=>new Intl.NumberFormat('en-GB',{maximumFractionDigits:1}).format(n);
+let rows=[{w:650,h:700,qty:6},{w:600,h:400,qty:4},{w:200,h:100,qty:8}];
+const label=i=>i<26?String.fromCharCode(65+i):`P${i+1}`;
+try{const saved=JSON.parse(localStorage.getItem('boardfit-v1'));if(saved&&Array.isArray(saved.rows)&&saved.rows.length<=50){rows=saved.rows;for(const id of ['sheetW','sheetH','kerf'])$(id).value=saved[id];$('rotate').checked=saved.rotate!==false;}}catch{}
+function persist(){try{localStorage.setItem('boardfit-v1',JSON.stringify({rows,sheetW:$('sheetW').value,sheetH:$('sheetH').value,kerf:$('kerf').value,rotate:$('rotate').checked}));}catch{$('saveNote').textContent='Device storage is unavailable in this browser.';}}
+function dirty(){persist();document.querySelector('.results').classList.add('stale');$('status').textContent='● Recalculate to update';$('print').disabled=true;$('pieceCount').textContent=`${rows.reduce((n,p)=>n+(Number(p.qty)||0),0)} PIECES`;}
+function renderRows(){
+ $('rows').replaceChildren();
+ rows.forEach((p,i)=>{
+ const row=document.createElement('div');row.className='piece-row';
+ const badge=document.createElement('span');badge.className='piece-letter';badge.style.background=colors[i%colors.length];badge.textContent=label(i);row.append(badge);
+ for(const [key,name] of [['w','length'],['h','width'],['qty','quantity']]){const input=document.createElement('input');input.type='number';input.min=key==='qty'?'1':'0.1';input.max=key==='qty'?'500':'100000';input.step=key==='qty'?'1':'any';input.required=true;input.value=p[key];input.setAttribute('aria-label',`Piece ${label(i)} ${name}${key==='qty'?'':' in millimetres'}`);input.addEventListener('input',()=>{p[key]=input.value===''?'':Number(input.value);dirty();});row.append(input);}
+ const del=document.createElement('button');del.type='button';del.className='remove';del.textContent='×';del.setAttribute('aria-label',`Remove piece ${label(i)}`);del.addEventListener('click',()=>{rows.splice(i,1);renderRows();dirty();});row.append(del);$('rows').append(row);
+ });$('add').disabled=rows.length>=50;$('pieceCount').textContent=`${rows.reduce((n,p)=>n+(Number(p.qty)||0),0)} PIECES`;
+}
+function svgNode(name,attrs={},text){const el=document.createElementNS('http://www.w3.org/2000/svg',name);for(const [k,v]of Object.entries(attrs))el.setAttribute(k,v);if(text!==undefined)el.textContent=text;return el;}
+function showSheet(sheet,index,W,H){
+ const block=document.createElement('div');block.className='board-block';
+ const heading=document.createElement('div');heading.className='board-label';const title=document.createElement('strong');title.textContent=`Sheet ${String(index+1).padStart(2,'0')}`;const info=document.createElement('small');info.textContent=`${sheet.pieces.length} pieces · ${fmt(sheet.pieces.reduce((a,p)=>a+p.w*p.h,0)/(W*H)*100)}% used`;heading.append(title,info);block.append(heading);
+ // Fixed display coordinate system keeps labels readable for all stock sizes.
+ const scale=700/W,h=H*scale,pad=35;
+ const svg=svgNode('svg',{viewBox:`0 0 770 ${h+70}`,role:'img','aria-label':`Sheet ${index+1}, ${W} by ${H} millimetres, ${sheet.pieces.length} pieces`});
+ const defs=svgNode('defs'),pattern=svgNode('pattern',{id:`hatch${index}`,width:7,height:7,patternUnits:'userSpaceOnUse',patternTransform:'rotate(45)'});pattern.append(svgNode('rect',{width:7,height:7,fill:'#f3f3e9'}),svgNode('line',{x1:0,y1:0,x2:0,y2:7,stroke:'#e1e4d4','stroke-width':2}));defs.append(pattern);svg.append(defs);
+ svg.append(svgNode('text',{x:385,y:18,'text-anchor':'middle',fill:'#87917d','font-size':11},`${fmt(W)} mm`));
+ svg.append(svgNode('text',{transform:`translate(15 ${pad+h/2}) rotate(-90)`,'text-anchor':'middle',fill:'#87917d','font-size':11},`${fmt(H)} mm`));
+ svg.append(svgNode('rect',{x:pad,y:pad,width:700,height:h,fill:`url(#hatch${index})`,stroke:'#a8b39b','stroke-width':1}));
+ sheet.pieces.forEach(p=>{const x=pad+p.x*scale,y=pad+p.y*scale,w=p.w*scale,ph=p.h*scale;
+ const group=svgNode('g');group.append(svgNode('title',{},`Piece ${label(p.id)} · ${p.w} × ${p.h} mm${p.rotated?' · rotated 90°':''}`),svgNode('rect',{x,y,width:w,height:ph,fill:colors[p.id%colors.length],stroke:'#fff','stroke-width':1}));
+ if(w>15&&ph>13){const size=Math.min(16,ph*.37,w*.3);group.append(svgNode('text',{x:x+w/2,y:y+ph/2+(ph>45&&w>74?-5:4),'font-size':size,'font-weight':600,fill:'#354b39','text-anchor':'middle'},label(p.id)));
+ if(ph>45&&w>74)group.append(svgNode('text',{x:x+w/2,y:y+ph/2+13,'font-size':Math.min(11,w/10),'text-anchor':'middle',fill:'#4b5c46'},`${fmt(p.w)} × ${fmt(p.h)}`));}
+ svg.append(group);
+ });block.append(svg);return block;
+}
+function calculate(){
+ $('error').hidden=true;$('warning').hidden=true;
+ const W=Number($('sheetW').value),H=Number($('sheetH').value),k=Number($('kerf').value);
+ try{
+ const pieces=rows.map((p,id)=>({...p,w:Number(p.w),h:Number(p.h),qty:Number(p.qty),id}));const result=plan(W,H,k,pieces,$('rotate').checked);
+ const placed=result.sheets.flatMap(s=>s.pieces),area=placed.reduce((n,p)=>n+p.w*p.h,0),stockArea=result.sheets.length*W*H;
+ $('sheetCount').textContent=result.sheets.length;$('stockLabel').textContent=`${fmt(W)} × ${fmt(H)} mm each`;$('placed').textContent=placed.length;$('totalLabel').textContent=`of ${pieces.reduce((n,p)=>n+p.qty,0)} requested pieces`;
+ $('usage').textContent=`${stockArea?Math.round(area/stockArea*100):0}%`;$('wasteLabel').textContent=`${fmt((stockArea-area)/1e6)} m² offcuts + saw loss`;
+ $('boards').replaceChildren(...result.sheets.map((s,i)=>showSheet(s,i,W,H)));
+ if(!result.sheets.length){const empty=document.createElement('div');empty.className='empty';empty.textContent=pieces.length?'No pieces fit this sheet. Try a larger stock size.':'Add a piece size to start your cutting plan.';$('boards').append(empty);}
+ $('legend').replaceChildren();pieces.forEach((p,i)=>{const item=document.createElement('span');item.className='legend-item';const swatch=document.createElement('span');swatch.className='swatch';swatch.style.background=colors[i%colors.length];item.append(swatch,document.createTextNode(`${label(i)} · ${fmt(p.w)} × ${fmt(p.h)} · Qty ${p.qty}`));$('legend').append(item);});
+ if(result.unplaced.length){$('warning').hidden=false;$('warning').textContent=`Does not fit: ${result.unplaced.map(p=>`${label(p.id)} (${fmt(p.w)} × ${fmt(p.h)} mm, qty ${p.qty})`).join('; ')}. These pieces are excluded from the sheet count. ${$('rotate').checked?'Use larger sheets or change these dimensions.':'Try allowing rotation, or use larger sheets.'}`;}
+ document.querySelector('.results').classList.remove('stale');$('status').textContent=result.unplaced.length?'● Some pieces do not fit':'● Layout ready';$('print').disabled=false;persist();
+ }catch(e){$('error').hidden=false;$('error').textContent=e.message;$('status').textContent='● Check your measurements';document.querySelector('.results').classList.add('stale');$('print').disabled=true;}
+}
+$('add').addEventListener('click',()=>{rows.push({w:'',h:'',qty:1});renderRows();dirty();$('rows').lastElementChild.querySelector('input').focus();});
+$('planner').addEventListener('submit',e=>{e.preventDefault();calculate();});
+for(const id of ['sheetW','sheetH','kerf','rotate'])$(id).addEventListener('input',dirty);
+$('print').addEventListener('click',()=>window.print());renderRows();calculate();
+</script></body></html>
